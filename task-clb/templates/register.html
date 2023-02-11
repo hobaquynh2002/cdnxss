@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register</title>
+  </head>
+  <body>
+    <h1>Register</h1>
+    <form action="{{ url_for('register') }}" method="post" enctype="multipart/form-data">
+      <input type="text" name="username" placeholder="Username">
+      <input type="password" name="password" placeholder="Password">
+      <input type="submit" value="Submit">
+    </form>
+    <a href="{{ url_for('login') }}">Login</a>
+  </body>
+</html>

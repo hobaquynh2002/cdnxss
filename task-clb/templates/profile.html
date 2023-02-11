@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Profile Page</title>
+  </head>
+  <body>
+    <h1>Welcome, {{ username }}</h1>
+    <p>Here's your uploaded file:</p>
+    <img src="{{ uploaded_file }}" alt="Uploaded file">
+    <form action="/profile/{{ username }}" method="post" enctype="multipart/form-data">
+      <input type="file" name="file">
+      <input type="submit" value="Upload">
+    </form>
+    <button class="login100-form-btn">
+      <a class="login100-form-btn" href="/logout">Logout</a>
+    </button>
+
+  </body>
+</html>
